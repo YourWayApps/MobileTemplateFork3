@@ -24,7 +24,10 @@ jobs:
 
       - name: Build the Expo app
         run: npx expo export --output-dir web-build
-
+        
+      - name: List files in web-build
+        run: ls -R web-build
+        
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
