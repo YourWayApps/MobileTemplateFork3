@@ -28,6 +28,20 @@ jobs:
       - name: List files in web-build
         run: ls -R web-build
 
+      - name: Display contents of build directory (before copy)
+        run: |
+          echo "Listing contents of build directory before copying:"
+          ls -al /home/runner/work/MobileTemplateFork3/MobileTemplateFork3/web-build
+      - name: Display contents of build directory M3 (before copy)
+        run: |
+          echo "Listing contents of build directory before copying M3:"
+          ls -al /home/runner/work/MobileTemplateFork3
+
+      - name: Display contents of build directory M3 M3 (before copy)
+        run: |
+          echo "Listing contents of build directory before copying M3:"
+          ls -al /home/runner/work/MobileTemplateFork3
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
